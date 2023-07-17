@@ -1,0 +1,17 @@
+appId: "com.wdiodemoapp"
+---
+
+- launchApp:
+    clearState: true
+
+- tapOn: "Login"
+- tapOn: "Email"
+- inputText: "test@gmail.com"
+- assertVisible: "test@gmail.com"
+- tapOn: "Password"
+- inputText: "12qw!@QW"
+- tapOn: "button-LOGIN"
+- assertVisible: "Success"
+- assertVisible: "You are logged in!"
+- tapOn: "OK"
+- back
